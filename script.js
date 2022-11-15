@@ -16,11 +16,11 @@ for(let i = 0 ; i < listaSpesa.length ; i++){
 // stampo la mia lista
     console.log(numeroLista +("- ")+ lista);
 };*/
-
+/*
+//loop con whille
 //Variabile per contare con un loop whille
 let contatore = 0 ;
 
-//loop con whille
 while(contatore < listaSpesa.length){
 //variabile che serve per prendere l'elemento in ordine dalla lista
     let lista = listaSpesa[contatore];
@@ -30,4 +30,21 @@ while(contatore < listaSpesa.length){
     console.log(numeroLista +("- ")+ lista);
 //faccio calcolo al contatore per non fare un loop indefinita e mi crasha il pc !
     contatore += 1;
+};*/
+
+// lista stampata nella html con loop while 
+//Variabile per contare con un loop whille
+let contatore = 0 ;
+
+//sampare un elenco puntato in html
+document.write(`<ul>`);
+//loop con whille
+while(contatore < listaSpesa.length){
+//variabile che serve per prendere l'elemento in ordine dalla lista
+    let lista = listaSpesa[contatore];
+//stampo la mia lista 
+    document.write(`<li>${lista}</li>`);
+//faccio calcolo al contatore per non fare un loop indefinita e mi crasha il pc !
+    contatore += 1;
 };
+document.write(`</ul>`);
