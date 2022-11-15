@@ -22,12 +22,12 @@ let contatore = 0 ;
 
 //loop con whille
 while(contatore < listaSpesa.length){
-
+//variabile che serve per prendere l'elemento in ordine dalla lista
     let lista = listaSpesa[contatore];
-
+//viriabile che serve per identificare ordinare la lista in numeri 
     numeroLista += 1 ;
-
+//stampo la mia lista 
     console.log(numeroLista +("- ")+ lista);
-
+//faccio calcolo al contatore per non fare un loop indefinita e mi crasha il pc !
     contatore += 1;
-}
+};
