@@ -5,7 +5,7 @@ Quando le stampe in console sono corrette, stampare gli elementi in un elenco pu
 let listaSpesa = ["carne","olio","riso","pasta","burro","aqua","biscotti"]; 
 //variabile serve per contare gli elementi della lista 
 let numeroLista = parseInt(0) ;
-
+/*
 //loop for per stampare ogni ogetto  nella lista indvidualmente
 for(let i = 0 ; i < listaSpesa.length ; i++){
     
@@ -15,4 +15,19 @@ for(let i = 0 ; i < listaSpesa.length ; i++){
     let lista = listaSpesa[i];
 // stampo la mia lista
     console.log(numeroLista +("- ")+ lista);
-};
+};*/
+
+//Variabile per contare con un loop whille
+let contatore = 0 ;
+
+//loop con whille
+while(contatore < listaSpesa.length){
+
+    let lista = listaSpesa[contatore];
+
+    numeroLista += 1 ;
+
+    console.log(numeroLista +("- ")+ lista);
+
+    contatore += 1;
+}
